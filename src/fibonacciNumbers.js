@@ -2,7 +2,7 @@
 // 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even - valued terms.
 
-function fibonacci() {
+const fibonacci = () => {
   let a = 1,
     b = 0,
     temp;
@@ -21,8 +21,8 @@ function fibonacci() {
       console.log(" >>>> ", b, fiboSum);
     }
   }
-  console.log("fibonacci", fiboSum);
-  return b;
-}
+  return fiboSum;
+};
 
-fibonacci();
+const sum = fibonacci();
+console.log("fibonacci sum", sum);
